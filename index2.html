@@ -13,10 +13,20 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-     <link href='http://fonts.googleapis.com/css?family=Balthazar:400,700' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Balthazar:400,700' rel='stylesheet' type='text/css'>
      
     <style>
-      
+      div.sliderInner{
+        width: 960px;
+        height:500px;
+        margin-left:0px;
+      }
+      div#slider{
+        width: 960px;
+        height:500px;
+        margin-left:0px;
+      }
+
       @font-face { font-family: myfont ; src: url('UTM Bebas.ttf'); }     
 
     @media (min-width: 1000px) {
@@ -36,6 +46,49 @@
       }
            
     }
+    .dropbtn {
+    background-color: transparent;
+    width: 20px;
+    height:20px;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color:  #666666
+ ;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    font-weight: bold;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Helvetica,Arial,sans-serif;
+    line-height: 1.2em;
+    font-height: 10px;
+
+}
+
+.dropdown-content a:hover {background-color: #999999; text-decoration: none; color:white;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn:hover {
+    opacity: 50%;
+
     </style>
 
 </head>
@@ -47,6 +100,16 @@
 <div id="w">    
 
   <div class="audio-player">
+   <div class="dropdown" style=" border:0: none; padding-top: 0px; float:left; margin-left: 500px">
+      <div class="dropbtn" style="background: url(images/playlist.png) 0 0 no-repeat; width:30px; height: 37px;"></div>
+      <div class="dropdown-content">
+        <a href="#">Sing With Me</a>
+        <a href="#">One Day (Cover)</a>
+        <a href="#">Sống Đầy Từ Hôm Nay</a>
+      </div>
+    </div>
+
+
     <h2 style="padding-left:45px; font-family: 'Permanent Marker', cursive;">SING WITH ME - THIÊN TÙNG</h2>
     <audio id="audio-player" src="media/SINH WITH ME MASTER.mp3" type="audio/mp3" controls="controls"></audio>
   </div><!-- @end .audio-player -->
@@ -75,8 +138,6 @@ $(function(){
 <!-- meta tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Estate Group Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //meta tags -->
 <!--fonts-->
@@ -109,7 +170,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- header -->
 <div class="awesome">
 <header>
-  <div class="container">
+  <div class="container" style=" margin-bottom:50px;">
     <!-- nav -->
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -155,13 +216,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- slider -->
 <div id="sliderFrame">
     <div id="slider">
-        <a href="http://www.menucool.com/javascript-image-slider" target="_blank">
-            <img src="images/image-slider-1.jpg"/>
-        </a>
-        <img src="images/image-slider-2.jpg" />
-        <img src="images/image-slider-3.jpg" alt="" />
-        <img src="images/image-slider-4.jpg" alt="#htmlcaption" />
-        <img src="images/image-slider-5.jpg" />
+        
+            <img src="images/cover1.jpg"/>
+        
+        <img src="images/cover2.jpg" />
+        <img src="images/cover3.jpg" alt="" />
+        <img src="images/cover4.jpg" alt="#htmlcaption" />
+        <img src="images/cover5.jpg" />
     </div>        
 </div>
 <!-- //slider -->
@@ -269,7 +330,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThienTungOfficial%2F&tabs=timeline&width=397&height=500&small_header=true&adapt_container_width=false&hide_cover=true&show_facepile=false&appId=947082358727079" width="395" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>  
     <div id="player1" style=" padding-top: 30px; padding-right:150px">
 
-    <iframe width="397" height="200" src="http://mp3.zing.vn/embed/song/ZW788BD8?" frameborder="0" allowfullscreen="true" alt="Sống Đầy Từ Hôm Nay"></iframe>            
+    <iframe scrolling="no" width="640" height="180" src="http://mp3.zing.vn/embed/song/ZW788BD9?start=true" frameborder="0" allowfullscreen="true"></iframe></p>
+            
     </div>
 
                 
