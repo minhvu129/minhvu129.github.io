@@ -103,17 +103,33 @@
    <div class="dropdown" style=" border:0: none; padding-top: 0px; float:left; margin-left: 500px">
       <div class="dropbtn" style="background: url(images/playlist.png) 0 0 no-repeat; width:30px; height: 37px;"></div>
       <div class="dropdown-content">
-        <a href="#">Sing With Me</a>
-        <a href="#">One Day (Cover)</a>
+        <a href="#" onclick="myfunction2()" >Sing With Me</a>
+        <a href="#" onclick="myfunction1()">One Day (Cover)</a>
         <a href="#">Sống Đầy Từ Hôm Nay</a>
       </div>
     </div>
 
 
-    <h2 style="padding-left:45px; font-family: 'Permanent Marker', cursive;">SING WITH ME - THIÊN TÙNG</h2>
+    <h2 id= "demo" style="padding-left:45px; font-family: 'Permanent Marker', cursive;">SING WITH ME - THIÊN TÙNG</h2>
     <audio id="audio-player" src="media/SINH WITH ME MASTER.mp3" type="audio/mp3" controls="controls"></audio>
   </div><!-- @end .audio-player -->
 </div><!-- @end #content -->
+
+<script>
+  
+  function myfunction1(){
+
+    document.getElementById("audio-player").getAttributeNode("src").value = "media/ONE DAY MASTER.mp3";
+    document.getElementById("demo").innerHTML = "ONE DAY (COVER) -THIEN TUNG";
+
+  }
+  function myfunction2(){
+
+    document.getElementById("audio-player").getAttributeNode("src").value = "media/SINH WITH ME MASTER.mp3";
+    document.getElementById("demo").innerHTML = "SING WITH ME -THIEN TUNG";
+
+  }
+</script>
 
 <script type="text/javascript">
 $(function(){
